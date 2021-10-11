@@ -5,8 +5,8 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Sites profissionais, responsivos, loja virtual, UX design - Agência Colors </title>
-        <meta name="description" content="Criação profissional de sites responsivos, lojas virtuais, interface, aplicativos e muito mais.Somos a Agência Colors">
-        <meta name="Keywords" content="Site, site responsivo, criacão de site, ux design, loja virtual">
+        <meta name="description" content="Somos a Agencia Colors, infome sua idade">
+        <meta name="Keywords" content="Site, site responsivo">
 
         <!-- FAVICON -->
         <link rel="shortcut icon" href="imagem/favicon.png" type="image/x-icon">
@@ -16,78 +16,72 @@
  </head>
 
  <body>
-      <header>
-           <div><p><a href="index.html"><img src="imagem/favicon2.png" alt="Logo Agência Colors"></a></p></div>
-
-            <nav>
-             
-                <ul>
-                    <li><a href="#produto" title="Produtos da Agência Colors">Produto</a></li>
-
-                    <li><a href="#ux" title="Criacão de interfaces com foco em UX">Ux Design</a></li>
-
-                    <li><a href="#motion" title="Motion design">Motion</a></li>
-
-                    <li><a href="#brand" title="Brand">Brand</a></li>
-                    <li><a href="#print" title="Print">Print</a></li>
-                </ul>
-            </nav>
-      </header>
-
-      <section id="produto">
-            <div  class="conteudo">
-                <h1>PRODUTO</h1>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Alias sit voluptates assumenda tempora, recusandae totam aperiam iste distinctio, exercitationem quos sapiente</p>
-                <p><a href="#" title="" class="cta  bt-verde-agua">SAIBA MAIS</a></p>
-            </div>
+      <section class="centraliza">
+           <h2>Verificação de idade</h2>
+           <p>Informe o ano do seu nascimento para verificarmos se nosso conteúdo é apropriado.</p>
       </section>
 
-      <section id="ux">
-         <div  class="conteudo">
-              <h1>UX DESIGN</h1>
-              <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Alias sit voluptates assumenda tempora, recusandae totam aperiam iste distinctio, exercitationem quos sapiente enim quas ut iure eaque consectetur tenetur natus facere!</p>
-              <p><a href="#" title="" class="cta">SAIBA MAIS</a></p>
-         </div>
-     </section>
-
-     <section id="motion">
-         <div  class="conteudo">
-              <h1>MOTION</h1>
-              <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Alias sit voluptates assumenda tempora, recusandae totam aperiam iste distinctio, exercitationem quos sapiente enim quas ut iure eaque consectetur tenetur natus facere!</p>
-              <p><a href="#" title="" class="cta bt-verde-agua">SAIBA MAIS</a></p>
-         </div>
-     </section>
-
-     <section id="brand">
-         <div  class="conteudo">
-              <h1>BRAND</h1>
-              <p class="texto-cinza">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Alias sit voluptates assumenda tempora, recusandae totam aperiam iste distinctio, exercitationem quos sapiente enim quas ut iure eaque consectetur tenetur natus facere!</p>
-              <p><a href="#" title="" class="cta">SAIBA MAIS</a></p>
-         </div>
-     </section>
 
 
 
-     <section id="print">
-         <div  class="conteudo">
-              <h1>PRINT</h1>
-              <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Alias sit voluptates assumenda tempora, recusandae totam aperiam iste distinctio, exercitationem quos sapiente enim quas ut iure eaque consectetur tenetur natus facere!</p>
-              <p><a href="#" title="" class="cta">SAIBA MAIS</a></p>
-         </div>
-     </section>
-     
-     <!-- Botão de whatsApp flutuante -->
-     <div class="whats">
-         <a href="https://api.whatsapp.com/send?phone=5511987654321&     text=Estava%20navegando%20na%20p%C3%A1gina%20X%20e%20quero%20mais%20informa%C3%A7%C3%B5es%20sobre" title="mensagem via whatsApp" target="_blank"><img src="imagem/logozap.png" alt="logo whatsApp"></a> 
-     </div>
+      <script>
+       //O básico (mal) feito
+       /* let nasc = prompt("Digite o ano do seu nascimento com 4 digitos");
+        document.write("<br>Você tem " +(2021-nasc)+ " anos.");  */
 
 
-     <!-- Barra de acessibilidade -->
-     <div id="acessibilidade">
-         <button onclick="tamTexto(-4)" >-</button>
-         <button onclick="tamTexto(18)">&osol;</button>
-         <button onclick="tamTexto(+4)">+</button>
-     </div>
-     <script src="js/script.js"></script>
+          // Pegando o ano atual dinâmicamente 
+       /* let nasc = prompt("Digite o ano do seu nascimento com 4 digitos");
+        let anoAtual = new Date().getFullYear();
+        document.write(anoAtual);
+        document.write(" Você tem " +(anoAtual - nasc)+ " anos. ");*/
+
+
+        //Adicionando uma condicional que verifica se o úsuario é maior que 18 anos e executa algo de acordo com essas resposta
+        /*let nasc = prompt("Digite o ano do seu nascimento com 4 digitos");
+        let anoAtual = new Date().getFullYear();
+        let idade = anoAtual - nasc;
+
+        if(idade < 18){
+               document.write("Você ainda não tem idade para acessar a Agência Colors.");
+        }else{
+             document.write("Que bom que você chegou á Agência Colors");
+          }  */
+
+
+
+          //Direcionando o úsuario para o site se ele for maior de idade
+         /*  let nasc = prompt("Digite o ano do seu nascimento com 4 digitos");
+          let anoAtual = new Date().getFullYear();
+          let idade = anoAtual - nasc;
+
+        if(idade < 18){
+               document.write("Você ainda não tem idade para acessar a Agência Colors.");
+        }else{
+           Window.location = "inicio.html";
+          }  */
+
+
+
+          //Direcionando o úsuario de acordo com a idade, após X segundos
+          let nasc = prompt("Digite o ano do seu nascimento com 4 digitos");
+          let anoAtual = new Date().getFullYear();
+          let idade = anoAtual - nasc;
+
+        if(idade < 18){
+               document.write("Você ainda não tem idade para acessar a Agência Colors.");
+        }else{
+           document.write("Que bom que você veio.Você será redirecionado para o nosso site.");
+
+           setTimeout(function(){
+                window.location = "inicio.html";
+               }, 3000);
+
+
+
+          };
+
+
+      </script>
  </body>
 </html>
