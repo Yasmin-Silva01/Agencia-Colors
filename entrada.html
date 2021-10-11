@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+ <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Sites profissionais, responsivos, loja virtual, UX design - Agência Colors </title>
+        <meta name="description" content="Somos a Agencia Colors, infome sua idade">
+        <meta name="Keywords" content="Site, site responsivo">
+
+        <!-- FAVICON -->
+        <link rel="shortcut icon" href="imagem/favicon.png" type="image/x-icon">
+
+       <!-- CSS externo -->
+       <link rel="stylesheet" href="css/style.css">
+ </head>
+
+ <body>
+      <section class="centraliza">
+           <h2>Verificação de idade</h2>
+           <p>Informe o ano do seu nascimento para verificarmos se nosso conteúdo é apropriado.</p>
+      </section>
+
+
+
+
+      <script>
+       //O básico (mal) feito
+       /* let nasc = prompt("Digite o ano do seu nascimento com 4 digitos");
+        document.write("<br>Você tem " +(2021-nasc)+ " anos.");  */
+
+
+          // Pegando o ano atual dinâmicamente 
+       /* let nasc = prompt("Digite o ano do seu nascimento com 4 digitos");
+        let anoAtual = new Date().getFullYear();
+        document.write(anoAtual);
+        document.write(" Você tem " +(anoAtual - nasc)+ " anos. ");*/
+
+
+        //Adicionando uma condicional que verifica se o úsuario é maior que 18 anos e executa algo de acordo com essas resposta
+        /*let nasc = prompt("Digite o ano do seu nascimento com 4 digitos");
+        let anoAtual = new Date().getFullYear();
+        let idade = anoAtual - nasc;
+
+        if(idade < 18){
+               document.write("Você ainda não tem idade para acessar a Agência Colors.");
+        }else{
+             document.write("Que bom que você chegou á Agência Colors");
+          }  */
+
+
+
+          //Direcionando o úsuario para o site se ele for maior de idade
+         /*  let nasc = prompt("Digite o ano do seu nascimento com 4 digitos");
+          let anoAtual = new Date().getFullYear();
+          let idade = anoAtual - nasc;
+
+        if(idade < 18){
+               document.write("Você ainda não tem idade para acessar a Agência Colors.");
+        }else{
+           Window.location = "index.html";
+          }  */
+
+
+
+          //Direcionando o úsuario de acordo com a idade, após X segundos
+          let nasc = prompt("Digite o ano do seu nascimento com 4 digitos");
+          let anoAtual = new Date().getFullYear();
+          let idade = anoAtual - nasc;
+
+        if(idade < 18){
+               document.write("Você ainda não tem idade para acessar a Agência Colors.");
+        }else{
+           document.write("Que bom que você veio.Você será redirecionado para o nosso site.");
+
+           setTimeout(function(){
+                window.location = "index.html";
+               }, 3000);
+
+
+
+          };
+
+
+      </script>
+ </body>
+</html>

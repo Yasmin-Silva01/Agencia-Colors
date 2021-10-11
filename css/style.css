@@ -1,0 +1,200 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Merriweather&family=Oswald&display=swap');
+
+
+
+/*
+Texto corrido: font-family: 'Merriweather', serif;
+
+Título: font-family: 'Oswald', sans-serif;
+*/
+
+
+/* Ajuste do Box model pra tudo */
+*, *::after, *::before {box-sizing: border-box;}
+
+html{
+    font-size:18px;
+    scroll-behavior:smooth; /*Rolagem suave entre as areas da paágina */
+
+    scroll-padding-top:70px; /*Aplica um padding apenas quando o scroll acontece, no nosso caso, ao clicar no links do menu */
+}
+img, iframe{
+    max-width: 100%;
+}
+body{
+    margin:0;
+    padding:0;
+    font-family:'Merriweather',serif;
+}
+header{
+    background-color: white;
+    text-align: center;
+    justify-content: space-around;
+    position:sticky;
+    top:0;
+    padding-bottom:0.1rem;
+}
+nav ul{
+    list-style: none;
+    padding: 0;
+    display:flex;
+    justify-content: space-around;
+}
+nav a{
+    text-decoration: none;
+    color: black;
+    font-family:'Oswald', 'sans-serif';
+    padding:.5rem .7rem;
+    transition: all 0.6s;
+    
+}
+nav a:hover, nav a:active{
+   color:rgb(255, 239, 60);
+    background-color:black;
+}
+section{
+    height:73vh;
+    display: flex;
+    align-items:center ;
+    margin:0;
+}
+.conteudo{
+    width: 90%;
+    max-width: 800px;
+    margin: auto;
+}
+section h1{
+    font-family: 'Oswald', sans-serif;
+    font-size: 3rem; 
+    margin-bottom:1rem;
+}
+section p{
+    line-height:1.9rem; /* configura espaço entre as linhas */
+}
+
+/* Formatando os botoes das sections */
+.cta{
+    font-family: 'Oswald', sans-serif;
+    letter-spacing:3px;  /*configura espaço entre as letras */
+    text-decoration: none;
+    font-size: .8rem;
+    font-weight: 600;
+    background-color:rgb(255, 239, 60);
+    padding:1.5rem 1.8rem;
+    line-height:5.5rem;
+    color:#000;
+}
+.cta::before{
+    content: "+";
+    margin-right:.8rem;
+    font-weight: 600;
+}
+
+/* Classe para deixar o link / botão verde água */
+.bt-verde-agua{
+    background-color:#26ccca;
+    color: #fff;
+}
+#produto{
+    background-image: url(../imagem/imagem1.png);
+    background-size: cover;
+    background-position-x:center;
+
+}
+#produto h1{
+    margin-top:111px;
+}
+#ux{
+    color: #fff;
+    background-image: url(../imagem/imagem3.png);
+}
+
+#motion{
+    background-image: url(../imagem/imagem4.png);
+    background-size: cover;
+    background-position-x:center;
+}
+#brand{
+    color: #fff;
+    background-image: url(../imagem/imagem5.png);
+}
+.texto-cinza{
+    color:#999;
+}
+#print{
+    background-image: url(../imagem/imagem2.png);
+    background-size: cover;
+    background-position-x:center;
+    color:#fff;
+}
+.centraliza{
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+/* Fazendo o botão do whatsApp flutuar */
+.whats{
+    position: fixed;
+    bottom:10px;
+    right:10px;
+    filter:drop-shadow(3px 3px 20px rgb(4, 288, 90));
+
+}
+#acessibilidade{
+    position: fixed;
+    right:0;
+    bottom:250px;
+    display: flex;
+    flex-direction: column;
+   
+}
+#acessibilidade button{
+    background-color: blueviolet;
+    color: #333;
+    border: 1px solid rgb(199, 199, 199);
+    margin-bottom: 2px;
+    width:40px;
+    height:30px;
+}
+
+
+
+
+
+/* Formatando para telas acima de 700px */
+@media screen and (min-width:700px){
+   
+    .conteudo{
+        width: 50%;
+        max-width: 800px;
+        margin:0;
+        margin-left:4rem;
+    }
+
+    section h1{
+        font-size: 5rem;
+        margin-bottom:-0.6rem;
+    }
+    #produto, #motion, #print{
+        background-attachment:fixed ;
+    }
+    header{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        height:10vh;
+    }
+    header div{
+        width:25%;
+    }
+    header nav{
+        width:70%;
+        max-width:800px;
+    }
+    nav a{
+        font-size:1.1rem;
+        padding:0.7rem 1rem;
+    }
+}
